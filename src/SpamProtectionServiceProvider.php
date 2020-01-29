@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class SpamProtectionServiceProvider extends ServiceProvider
 {
-    
+
     /**
      * Perform post-registration booting of services.
      *
@@ -14,12 +14,12 @@ class SpamProtectionServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+
         if ($this->app->runningInConsole()) {
-            $this->publishes();
+            //$this->publishes();
         }
     }
-    
+
     /**
      * Register any package services.
      *
